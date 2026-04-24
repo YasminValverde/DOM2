@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM Manipulation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css" />
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div>
+            <article>
+                <h1 class="democlass">DOM</h1>
+                <p>The <b>DOM</b> (<b>Document Object Model</b>) is an <a href="/jargon/a/api.htm">API</a> that exposes the elements of <a href="/jargon/h/html.htm">HTML</a> and <a href="/jargon/x/xml.htm">XML</a> documents as programming language <a href="/jargon/o/object.htm">objects</a>. The structure of the DOM for any document resembles the actual structure of the markup of the document. A <a href="/jargon/w/web-development.htm">web developer</a> can programmatically manipulate the DOM to modify a web page, before or while it is viewed by the user.</p>
+                <p>The most common programming language used in the DOM is <a href="/jargon/j/javascript.htm">JavaScript</a>, which is used on most websites. Using JavaScript allows for dynamic changes to be made to the DOM, including hiding, moving, and animating certain <a href="/jargon/h/html-element.htm">HTML elements</a> (such as text, tables, images, and entire divisions).</p>
+                <p>In the past, the DOM had fundamental differences between browsers, but today has become much more standardized, allowing for easier cross-browser scripting to be performed by developers.</p>
+                <h2 class="democlass">A DOM example using HTML</h2>
+                <p>Consider the following HTML document:</p>
+                <pre>&lt;html&gt;
+ &lt;head&gt;
+ &lt;title&gt;Example&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+  &lt;h1&gt;Example Page&lt;/h1&gt;
+  &lt;p&gt;This is an example page.&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</pre>
+                <p>The DOM for this document includes all of the elements and any text <a href="/jargon/n/node.htm">nodes</a> in those elements. The code in the previous example creates an object hierarchy as shown below.</p> <p><img src="dom1.jpg" alt="DOM example" width="490" height="348" class="image" ></p>
+                <p>For each element under the document root (&lt;html&gt;), there is an element node, and these element nodes have text nodes containing the text that is in the element. If there were an element with <a href="/jargon/a/attribut.htm">attributes</a>, an attribute node would be created for that element and any text for the attribute would create a text node under that attribute node.</p>
+                <div>
+                    <h2 class="democlass">Related pages</h2>
+                    <ul id="relatedPages">
+                        <li><a href="https://www.w3schools.com/js/js_htmldom.asp">JavaScript/HTML DOM Tutorial</a></li>
+                        <li><a href="https://www.w3schools.com/xml/dom_intro.asp">XML DOM Tutorial</a></li>
+                        <li><a href="https://www.w3.org/DOM/#what">Document Object Model overview</a></li>
+                        <li><a href="https://www.quirksmode.org/dom/intro.html">DOM Introduction (QuirksMode)</a></li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </body>
+</html>
